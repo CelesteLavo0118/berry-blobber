@@ -50,7 +50,7 @@ var writeBerries = function(berries){
     }
 
     document.write('<dt>Energy</dt>');
-    document.write('<dd>' + berry.energy + 'g'+'</dd>');
+    document.write('<dd>' + berry.energy + 'g' + '</dd>');
     document.write('<dt>Carbohydrates</dt>');
     document.write('<dd>' + berry.carbs + 'g' + '</dd>');
     document.write('<dt>Protein</dt>');
