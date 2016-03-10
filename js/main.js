@@ -38,27 +38,33 @@ var redCurrant = {
 var writeBerries = function(berries){
   document.write("<h1>Berries</h1>");
 
-  berries.forEach(function(berry){
-    document.write('h2'+berry.name+'</h2>');
-    document.write('<dt');
+  document.write('<ol>')
 
-    document.write('<dt>Grows on a Shrub?</dt>');
-    if (berry.onShrub) {
-      document.write('<dd>yes</dd>');
+  berries.forEach(function (berry) {
+    document.write('<li>');
+    document.write('<h2>' + berry.name + '</h2>');
+    document.write('<dl>');
+    document.write('<dt>Latin</dt>');
+    document.write('<dd><i>' + berry.latin + '</i></dd>');
+    document.write('<dd>');
+
+    if (berry.onShrub.true) {
+      document.write('Yes');
     }else {
-      document.write('<dd>no</dd>');
+      document.write('No');
     }
 
+    document.write('</dd>');
     document.write('<dt>Energy</dt>');
-    document.write('<dd>' + berry.energy + 'g' + '</dd>');
-    document.write('<dt>Carbohydrates</dt>');
-    document.write('<dd>' + berry.carbs + 'g' + '</dd>');
+    document.write('<dt>Carbs</dt>');
+    document.write('<dd>' + berry.energy[0] + ' kJ</dd>');
     document.write('<dt>Protein</dt>');
-    document.write('<dd>' + berry.protein + 'g' + '</dd>');
-
+    document.write('<dd>' + berry.protein[0] + ' g</dd>');
     document.write('</dl>');
+    document.write('</li>');
   });
-};
+    document.write('</ol>');
+  };
 
 // ##########################################################
 // START DO NOT CHANGE ZONE
