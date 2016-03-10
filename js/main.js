@@ -36,9 +36,9 @@ var redCurrant = {
 
 // Write your function here, name it `writeBerries`
 var writeBerries = function(berries){
-  document.write("<h1>Berries</h1>");
+  document.write('<h1>Berries</h1>');
 
-  document.write('<ol>')
+  document.write('<ol>');
 
   berries.forEach(function (berry) {
     document.write('<li>');
