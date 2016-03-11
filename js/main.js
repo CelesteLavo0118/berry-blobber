@@ -33,9 +33,7 @@ var redCurrant = {
 // END DO NOT CHANGE ZONE
 // ##########################################################
 
-
-// Write your function here, name it `writeBerries`
-var writeBerries = function(berries){
+var writeBerries = function (berries) {
   document.write('<h1>Berries</h1>');
 
   document.write('<ol>');
@@ -50,7 +48,7 @@ var writeBerries = function(berries){
 
     if (berry.onShrub.true) {
       document.write('Yes');
-    }else {
+    } else {
       document.write('No');
     }
 
@@ -63,8 +61,8 @@ var writeBerries = function(berries){
     document.write('</dl>');
     document.write('</li>');
   });
-    document.write('</ol>');
-  };
+  document.write('</ol>');
+};
 
 // ##########################################################
 // START DO NOT CHANGE ZONE
